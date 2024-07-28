@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body{
+
+            background: linear-gradient(90deg,cyan,blue,white);
+
+        }
+        h2{
+            /* border: 1px solid black; */
+            /* width: fit-content; */
+            text-align: center;
+            color: white;
+            text-shadow: black 5px 10px;
+            padding: 20px;
+            font-size: 40px;
+        }
+        form{
+            background:linear-gradient(180deg,rgba(12, 7, 55, 0.9),rgba(35, 14, 76, 0.9));
+            width: fit-content;
+
+            font-size: 30px;
+            padding: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            border-radius: 30px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            margin-left: 40px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/register" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
